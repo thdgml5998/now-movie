@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Movie from "./components/Movie";
+import { movieDummy } from "./movieDummy";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="wrap">
+        {movieDummy.results.map((item)=>{
+          //movieDummy데이터 안에 results안에 데이터 사용예정
+          return(
+            <Movie 
+              poster_path={item.poster_path} 
+              title={item.title} 
+              vote_average={item.vote_average} />
+          );
+        })}
+      </div>
     </div>
   );
 }
