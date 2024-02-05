@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/now-movie/static/css/main.3835d86f.css",
+    "main.js": "/now-movie/static/js/main.57afbeab.js",
+    "index.html": "/now-movie/index.html",
+    "main.3835d86f.css.map": "/now-movie/static/css/main.3835d86f.css.map",
+    "main.57afbeab.js.map": "/now-movie/static/js/main.57afbeab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3835d86f.css",
+    "static/js/main.57afbeab.js"
+  ]
+}
